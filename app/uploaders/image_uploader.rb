@@ -12,13 +12,13 @@ class ImageUploader < CarrierWave::Uploader::Base
   def store_dir
     "uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"
   end
-  process resize_to_fit: [800, 800]
-  version :thumb do
-    process resize_to_fill: [350, 350]
-  end
-  version :small_thumb, from_version: :thumb do
-    process resize_to_fill: [20, 20]
-  end
+  # process resize_to_fit: [800, 800]
+  # version :thumb do
+  #   process resize_to_fill: [350, 350]
+  # end
+  # version :small_thumb, from_version: :thumb do
+  #   process resize_to_fill: [20, 20]
+  # end
   # Provide a default URL as a default if there hasn't been a file uploaded:
   # def default_url(*args)
   #   # For Rails 3.1+ asset pipeline compatibility:

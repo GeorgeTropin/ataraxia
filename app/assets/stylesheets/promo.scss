@@ -1,3 +1,19 @@
+// @import 'reset';
+@font-face {
+  font-family: "KAZIMIRTEXT";
+  src: url(assets/fonts/KAZIMIRTEXT-REGULAR.TTF) format(truetype);
+  font-style: normal;
+  font-weight: normal;
+}
+
+
+p {
+  color: darken(red, 10%);
+  font-size: 15px;
+}
+
+
+
 // Place all the styles related to the Promo controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
